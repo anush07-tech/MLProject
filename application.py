@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 import pandas as pd
 import numpy as np
+import traceback
 
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData,PredictPipeline
@@ -8,7 +9,10 @@ from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 application=Flask(__name__)
 
 app=application
-app.debug=True
+
+@app.errorhandler(Exception)
+def handle_exception(e):
+    return f"<pre>{traceback.format_exc()}</pre>",500
 
 ## Route for home page
 
