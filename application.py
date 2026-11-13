@@ -8,6 +8,7 @@ from src.pipeline.predict_pipeline import CustomData,PredictPipeline
 application=Flask(__name__)
 
 app=application
+app.debug=True
 
 ## Route for home page
 
