@@ -4,8 +4,8 @@
 A machine learning web application that predicts a student's **Mathematics Score** from demographic and academic inputs, deployed on **AWS Elastic Beanstalk** with automated CI/CD via **AWS CodePipeline**.
 
 ## Live Demo
-- **Live Web App:
-**[Click here to try the Student Exam Performance Predictor](http://studentsperformance-env.eba-ujaw58np.ap-southeast-2.elasticbeanstalk.com/predictdata)
+- **Live Web App:**
+- [Click here to try the Student Exam Performance Predictor](http://studentsperformance-env.eba-ujaw58np.ap-southeast-2.elasticbeanstalk.com/predictdata)
 
 ## Tech Stack & Cloud Architecture
 - **Machine Learning:** Python, Pandas, NumPy, Scikit-Learn (`LinearRegression` selected after comparing multiple regression models including CatBoost, XGBoost, Random Forest, and Gradient Boosting).
